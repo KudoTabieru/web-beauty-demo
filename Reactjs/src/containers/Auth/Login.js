@@ -39,7 +39,7 @@ class Login extends Component {
       if (data && data.errCode !== 0) {
         this.setState({ errMessage: data.message });
       }
-      if (data && data.errCode == 0) {
+      if (data && data.errCode === 0) {
         this.props.userLoginSuccess(data.user);
         console.log("Login succeeds!");
       }
@@ -91,7 +91,7 @@ class Login extends Component {
                   }}
                 >
                   <i
-                    class={
+                    className={
                       this.state.isShowPassword
                         ? "far fa eye"
                         : "fas fa-eye-slash"
