@@ -1,12 +1,23 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import HomeHeader from "./HomeHeader";
+import Specialty from "./Section/Specialty";
+import About from "./Section/About";
+import Services from "./Section/Services";
+import Facilities from "./Section/Facilities";
+import Newspaper from "./Section/Newspaper";
 
 class HomePage extends Component {
   render() {
     return (
       <div>
-        <HomeHeader />
+        <Specialty>
+          <HomeHeader /> {/* Lồng HomeHeader vào Specialty */}
+        </Specialty>
+        <About />
+        <Services />
+        <Facilities />
+        <Newspaper />
       </div>
     );
   }
