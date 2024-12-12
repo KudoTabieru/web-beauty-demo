@@ -21,6 +21,8 @@ import System from "../routes/System";
 import { CustomToastCloseButton } from "../components/CustomToast";
 import HomePage from "./HomePage/HomePage.js";
 import CustomScrollbars from "../components/CustomScrollbars";
+import Booking from "./HomePage/BookingPage.js";
+import BookingPage from "./HomePage/BookingPage.js";
 
 class App extends Component {
   handlePersistorState = () => {
@@ -61,6 +63,8 @@ class App extends Component {
                     component={userIsAuthenticated(System)}
                   />
                   <Route path={path.HOMEPAGE} component={HomePage} />
+
+                  <Route path={path.BOOKING} component={BookingPage} />
                 </Switch>
               </CustomScrollbars>
             </div>

@@ -22,6 +22,7 @@ class Services extends Component {
           <div className="services-content">
             <div className="services-left-content">
               <div className="services-header-left">CÁC DỊCH VỤ CAO CẤP</div>
+              <hr></hr>
               <div className="services-details-left">
                 Nắm bắt xu thế làm đẹp thời thượng, Viện Thẩm mỹ LG Clinic tự
                 hào mang đến các dịch vụ cao cấp nhất trong lĩnh vực thẩm mỹ và

@@ -2,7 +2,7 @@
   padding: 0 48px;
   margin-top: 48px;
   width: 100%;
-  height: 570px;
+  height: 400px;
   .about-content {
     width: 100%;
     height: 560px;
@@ -31,12 +31,13 @@
         color: #666 !important;
         font-family: inherit;
         font-weight: 400;
-        line-height: 1.5;
+        line-height: 1.7;
         text-align: left;
         font-size: 18px;
         margin-top: 0;
         margin-bottom: 1rem;
         outline: none !important;
+        margin-right: 20px;
       }
     }
     .right-content {
@@ -45,11 +46,11 @@
       .img-right {
         background: url("../../../assets/LA-SPA_3-2000.jpg");
         // background-position: center center;
-        // background-size: contain !important;
+        background-size: contain !important;
         background-repeat: no-repeat;
-        background-size: cover;
+        // background-size: cover;
         background-color: none;
-        height: 560px;
+        height: 350px;
         width: 100%;
       }
     }
