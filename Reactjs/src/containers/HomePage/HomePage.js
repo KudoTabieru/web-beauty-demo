@@ -6,7 +6,13 @@ import About from "./Section/About";
 import Services from "./Section/Services";
 import Facilities from "./Section/Facilities";
 import Newspaper from "./Section/Newspaper";
-
+import HomeFooter from "./HomeFooter";
+// {
+//   /* <link
+//   href="https://fonts.googleapis.com/css?family=Playfair Display"
+//   rel="stylesheet"
+// ></link>; */
+// }
 class HomePage extends Component {
   render() {
     return (
@@ -18,6 +24,7 @@ class HomePage extends Component {
         <Services />
         <Facilities />
         <Newspaper />
+        <HomeFooter />
       </div>
     );
   }

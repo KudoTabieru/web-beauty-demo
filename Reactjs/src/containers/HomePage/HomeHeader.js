@@ -6,11 +6,15 @@ class HomeHeader extends Component {
   componentDidMount() {
     // Hiệu ứng thay đổi màu menu bar khi cuộn
     const header = document.querySelector(".home-header-container");
+    const navLinks = document.querySelector(".nav-links");
+
     window.addEventListener("scroll", () => {
       if (window.scrollY > 50) {
         header.classList.add("scrolled");
+        navLinks.classList.add("scrolled");
       } else {
         header.classList.remove("scrolled");
+        navLinks.classList.remove("scrolled");
       }
     });
   }
@@ -23,13 +27,13 @@ class HomeHeader extends Component {
           <div className="navbar">
             <ul className="nav-links">
               <li>
-                <a href="#home">Trang Chủ</a>
+                <a href="/home">Trang Chủ</a>
               </li>
               <li>
-                <a href="#about">Giới Thiệu</a>
+                <a href="/about">Giới Thiệu</a>
               </li>
 
-              <li class="dropdown">
+              <li className="dropdown">
                 <a href="#" className="dropbtn">
                   Dịch vụ
                 </a>
@@ -52,15 +56,17 @@ class HomeHeader extends Component {
                 </ul>
               </li>
               <li>
-                <a href="#lamdep">Tin tức</a>
+                <a href="/tintuc">Tin tức</a>
               </li>
 
               <li>
-                <a href="#contact">Liên hệ</a>
+                <a href="/contact">Liên hệ</a>
               </li>
 
               <li>
-                <button className="btn-booking">Booking now</button>
+                <a href="/booking">
+                  <button className="btn-booking">Booking now</button>
+                </a>
               </li>
             </ul>
           </div>

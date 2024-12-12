@@ -20,6 +20,8 @@ class Newspaper extends Component {
       <div>
         <div className="newspaper-container">
           <div className="newspaper-content">
+            <div className="newspaper-header">BÁO CHÍ NÓI GÌ VỀ MẠ BEAUTY</div>
+            <hr></hr>
             <div className="newspaper-right-content">
               <div className="img-right">
                 <Slider {...settings}>
