@@ -1,16 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
+
 .about-container {
-  padding: 0 48px;
+  padding: 0 200px;
   margin-top: 48px;
   width: 100%;
-  height: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid red;
+
   .about-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); // Tạo lưới 12 cột đều
     width: 100%;
-    height: 560px;
-    display: flex;
+    gap: 24px; // Khoảng cách giữa các cột
+    align-items: center;
+
     .left-content {
-      width: 50%;
-      // border: 1px solid red;
+      grid-column: span 6; // Chiếm 6 cột trong 12 cột
       font-family: "Playfair Display" !important;
+
       .about-us-left {
         color: #bf932e !important;
         margin-bottom: 0.5rem;
@@ -19,6 +29,7 @@
         line-height: 1.2;
         font-size: 20px;
       }
+
       .welcome-left {
         color: #333;
         margin-bottom: 1.5rem !important;
@@ -27,31 +38,95 @@
         line-height: 1.2;
         font-size: 32px;
       }
+
       .details-left {
         color: #666 !important;
         font-family: inherit;
         font-weight: 400;
         line-height: 1.7;
-        text-align: left;
         font-size: 18px;
-        margin-top: 0;
         margin-bottom: 1rem;
-        outline: none !important;
-        margin-right: 20px;
       }
     }
+
     .right-content {
-      width: 50%;
-      // border: 1px solid red;
+      grid-column: span 6; // Chiếm 6 cột trong 12 cột
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       .img-right {
         background: url("../../../assets/LA-SPA_3-2000.jpg");
-        // background-position: center center;
         background-size: contain !important;
         background-repeat: no-repeat;
-        // background-size: cover;
-        background-color: none;
         height: 350px;
         width: 100%;
+      }
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 1024px) {
+    .about-content {
+      grid-template-columns: 1fr; // Chuyển về 1 cột khi màn hình nhỏ
+      gap: 16px; // Giảm khoảng cách giữa các cột
+
+      .left-content,
+      .right-content {
+        grid-column: span 12; // Mỗi phần chiếm toàn bộ chiều rộng khi 1 cột
+      }
+
+      .right-content {
+        margin-top: 24px;
+
+        .img-right {
+          background-size: cover !important;
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 24px;
+
+    .about-content {
+      .left-content {
+        .welcome-left {
+          font-size: 24px;
+        }
+
+        .details-left {
+          font-size: 16px;
+        }
+      }
+
+      .right-content {
+        .img-right {
+          height: 250px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 16px;
+
+    .about-content {
+      .left-content {
+        .welcome-left {
+          font-size: 20px;
+        }
+
+        .details-left {
+          font-size: 14px;
+        }
+      }
+
+      .right-content {
+        .img-right {
+          height: 200px;
+        }
       }
     }
   }

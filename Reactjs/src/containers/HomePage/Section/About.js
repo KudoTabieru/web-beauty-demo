@@ -9,23 +9,24 @@ class About extends Component {
         <div className="about-container">
           <div className="about-content">
             <div className="left-content">
-              <div className="about-us-left">ABOUT US</div>
-              <div className="welcome-left">WELCOME TO LA SPA</div>
+              <div className="about-us-left">VỀ CHÚNG TÔI</div>
+              <div className="welcome-left">WELCOME TO MẠ BEAUTY</div>
               <div className="details-left">
-                Nearly 10 years of operation is such a long way, starting from a
-                small spa in the hotel to nowadays becoming spa chain with many
-                branches and bringing the pioneer mission to take the spa
-                industry in Vietnam to keep up with the standards of the world.
+                Lấy cảm hứng từ những cây mạ non - nhỏ bé và tràn đầy sức sống,
+                Mạ Beauty ra đời với niềm tin rằng mỗi làn da đều có tiềm năng
+                tỏa sáng, giống như những ngọn mạ vươn lên từ đất lành. Với sứ
+                mệnh “Ươm mầm sắc đẹp”, chúng tôi mong muốn đồng hành cùng khách
+                hàng trong hành trình nuôi dưỡng và phát triển vẻ đẹp tự nhiên,
+                bền vững theo thời gian.
               </div>
               <div className="details-left">
-                La Spa is ready to surprise you with meticulous care from the
-                smallest details, absolute cleanliness and unexpected service.
-              </div>
-              <div className="details-left">
-                What makes us proud is not just the increase in the number of
-                customers, the reputation, the revenue and the more perfection
-                of the process and quality service, but the staﬀ deep attachment
-                and enthusiasm.
+                Cái tên “Mạ Beauty” không chỉ gợi nhắc hình ảnh những cây mạ
+                non, mà còn mang theo thông điệp về sự tái sinh và vươn mình
+                phát triển. Triết lý này được chúng tôi gửi gắm vào từng dịch
+                vụ: mỗi làn da đều có thể “tái sinh” khi được chăm sóc tận tâm
+                và đúng cách. Tại Mạ Beauty, mỗi trải nghiệm không chỉ đơn thuần
+                cải thiện vẻ bề ngoài mà còn là hành trình khám phá và tôn vinh
+                nét đẹp riêng biệt trong mỗi con người.
               </div>
             </div>
             <div className="right-content">

@@ -1,0 +1,146 @@
+.intro-container {
+  margin-top: 140px;
+  width: 100%;
+  height: auto;
+
+  .intro-img {
+    background: url("../../../assets/ma_img_1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: none;
+    height: 420px;
+
+    width: 100%;
+    // border: 2px solid green;
+  }
+  .intro-content {
+    height: auto;
+    width: 100%;
+    padding: 0px 60px;
+
+    // border: 1px solid red;
+    // display: flex;
+
+    .section-1 {
+      background-color: #fef9f3;
+      height: 600px;
+      // border: 3px solid red;
+      width: 100%;
+      display: flex;
+      .section-1-left {
+        margin-top: 85px;
+        width: 50%;
+        // background: url("../../../assets/chairman.png");
+        background-position: center center;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: white;
+        height: 450px;
+      }
+      .section-1-right {
+        width: 50%;
+        // border: 3px solid red;
+        .title-1-right {
+          font-size: 32px;
+          line-height: 3rem;
+          margin-bottom: 2rem;
+          color: #b08933;
+          font-weight: 700;
+        }
+        .title-1-content {
+          height: 300px;
+          font-family: "UTM Avo", sans-serif;
+          font-size: 16px;
+          line-height: 1.5em;
+          color: #393939;
+          text-rendering: geometricPrecision;
+          overflow: scroll;
+        }
+      }
+    }
+
+    .section-2 {
+      background-color: #fef9f3;
+      width: 100%;
+      height: auto;
+      // border: 2px solid green;
+      justify-content: center;
+      align-items: center;
+      .section-2-title {
+        font-size: 32px;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+        color: #b08933;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+      }
+      .section-2-content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        // border: 1px solid red;
+
+        .section-2-left {
+          // background: url("../../../assets/tam-nhin-2.jpg.webp");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          width: 30%; /* Chiếm 50% chiều rộng của container cha */
+          aspect-ratio: 1; /* Đảm bảo chiều cao bằng chiều rộng để giữ hình tròn */
+          border-radius: 50%; /* Tạo hình tròn */
+          border: 5px solid #ccc; /* Thêm viền tùy chỉnh */
+          overflow: hidden; /* Đảm bảo nội dung không tràn ra ngoài viền */
+          margin: 0 auto; /* Căn giữa nếu cần */
+        }
+        .section-2-right {
+          width: 50%;
+          margin-left: 58px;
+
+          .section-2-right-title {
+            font-size: 32px;
+            font-weight: 700 !important;
+
+            color: #b08933;
+          }
+          .section-2-right-details {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-family: "UTM Avo", sans-serif;
+            font-size: 16px;
+            line-height: 1.5em;
+            color: #393939;
+          }
+        }
+      }
+    }
+    .section-3 {
+      background-color: #fef9f3;
+      width: 100%;
+      height: auto;
+      .section-3-content {
+        width: 100%;
+        height: auto;
+        .section-3-left {
+          width: 50%;
+          height: auto;
+
+          .section-3-left-title {
+            font-size: 32px;
+            font-weight: 700 !important;
+
+            color: #b08933;
+            .section-3-left-details {
+              text-rendering: geometricPrecision;
+              overflow: scroll;
+            }
+          }
+        }
+      }
+    }
+  }
+}

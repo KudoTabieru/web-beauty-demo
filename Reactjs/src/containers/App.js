@@ -21,8 +21,11 @@ import System from "../routes/System";
 import { CustomToastCloseButton } from "../components/CustomToast";
 import HomePage from "./HomePage/HomePage.js";
 import CustomScrollbars from "../components/CustomScrollbars";
-import Booking from "./HomePage/BookingPage.js";
 import BookingPage from "./HomePage/BookingPage.js";
+import AboutPage from "./HomePage/AboutPage.js";
+import ContactPage from "./HomePage/ContactPage.js";
+import BlogList from "../components/BlogList";
+import BlogDetail from "../components/BlogDetail";
 
 class App extends Component {
   handlePersistorState = () => {
@@ -65,6 +68,12 @@ class App extends Component {
                   <Route path={path.HOMEPAGE} component={HomePage} />
 
                   <Route path={path.BOOKING} component={BookingPage} />
+
+                  <Route path={path.ABOUT} component={AboutPage} />
+                  <Route path={path.CONTACT} component={ContactPage} />
+
+                  <Route path="/blog" element={<BlogList />} />
+                  <Route path="/blog/:slug" element={<BlogDetail />} />
                 </Switch>
               </CustomScrollbars>
             </div>

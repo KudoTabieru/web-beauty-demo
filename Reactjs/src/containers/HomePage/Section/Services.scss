@@ -1,20 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
+
 .services-container {
+  padding: 0 130px;
   margin-top: 30px;
   width: 100%;
-  height: 1000px;
-  // border: 1px solid red;
+  font-family: "Playfair Display", serif !important;
+
+  display: inline-block;
+  height: auto;
+  // border: 1px solid green;
+
   .services-content {
     // border: 1px solid red;
     width: 100%;
-    height: 350px;
+    height: auto;
     display: flex;
+    // border: 1px solid red;
 
     .services-left-content {
       width: 33%;
       // border: 1px solid green;
-      margin-right: 20px;
-      margin-left: 20px;
-      height: 350px;
+      margin-right: 10px;
+      // margin-left: 20px;
+      height: 450px;
 
       .services-header-left {
         font-size: 25px;
@@ -27,13 +35,13 @@
         margin-bottom: 4rem;
       }
       .services-details-left {
-        color: #000000;
+        color: #666;
         font-size: 16px;
         line-height: 2.1rem;
 
         font-weight: 400;
         text-align: justify;
-        font-family: "Roboto, sans-serif";
+        font-family: inherit;
       }
       .services-btn {
         margin-top: 15px;
@@ -64,15 +72,16 @@
     }
     .services-right-content {
       width: 67%;
+      height: 450px;
       // border: 4px solid blue;
       .img-right {
         width: 100%;
 
         .img-services-customize {
-          // border: 1px solid red;
+          // border: 1px solid grey;
           border-radius: 30px;
           width: 100%;
-          padding: 0px;
+          padding: 3px;
           text-align: center;
           transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
 
@@ -86,6 +95,7 @@
             height: 200px;
             width: 100%;
             border-radius: 30px;
+            border: 1px solid gray;
           }
           .more-infor {
             margin-top: 15px;
@@ -99,13 +109,13 @@
               transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
               background: #5d0c7b;
               border: 0px solid #5d0c7b !important;
-              font-size: 15px !important;
+              font-size: 12px !important;
               color: #ffff;
               font-weight: bold;
               font-family: "Roboto, sans-serif";
               margin: auto 0;
 
-              padding: 14px 115px;
+              padding: 0px 45px;
               border-radius: 95px;
             }
           }
@@ -120,6 +130,7 @@
             height: 200px;
             width: 100%;
             border-radius: 30px;
+            border: 1px solid gray;
           }
 
           .img-customize-3 {
@@ -132,6 +143,7 @@
             height: 200px;
             width: 100%;
             border-radius: 30px;
+            border: 1px solid gray;
           }
 
           .img-customize-4 {
@@ -144,6 +156,7 @@
             height: 200px;
             width: 100%;
             border-radius: 30px;
+            border: 1px solid gray;
           }
           .header-img {
             margin-top: 10px;
@@ -164,10 +177,11 @@
   }
   .image-services {
     margin-top: 20px;
-    background: url("../../../assets/banner-so-lieu.webp");
+    // background: url("../../../assets/banner-so-lieu.webp");
     background-position: center; /* Căn giữa ảnh */
     background-size: contain; /* Đảm bảo ảnh phủ đầy */
     background-repeat: no-repeat;
+    background-color: #555;
     height: 629px;
     width: 100%;
 
@@ -200,4 +214,132 @@
   right: 0 !important;
   background-color: black !important;
   border-radius: 200px;
+}
+
+//responsive
+@media (max-width: 768px) {
+  .services-container {
+    padding: 0 10px;
+    .services-content {
+      .services-left-content {
+        .services-header-left {
+          font-size: 15px;
+        }
+        .services-details-left {
+          font-size: 14px;
+        }
+        .services-btn {
+          font-size: 10px !important;
+          .services-btn-decor {
+            font-size: 10px !important;
+            padding: 5px 5px;
+            border-radius: 9px;
+          }
+        }
+      }
+      .services-right-content {
+        height: 200px;
+        .img-right {
+          .img-services-customize {
+            .img-services-customize-1 {
+              height: 100px;
+            }
+            .img-services-customize-2 {
+              height: 100px;
+            }
+            .img-services-customize-3 {
+              height: 100px;
+            }
+            .img-services-customize-4 {
+              height: 100px;
+            }
+            .header-img {
+              font-size: 12px;
+            }
+            .services-right-details {
+              font-size: 14px;
+            }
+            .more-infor {
+              width: 100%;
+              .btn-more-infor {
+                font-size: 10px !important;
+                padding: 3px 7px;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .services-container {
+    height: auto;
+    padding: 0 10px;
+    .services-content {
+      height: auto;
+      display: inline-block;
+      .services-left-content {
+        width: 100%;
+        height: 250px;
+        .services-header-left {
+          font-size: 12px;
+          margin-bottom: 20px;
+        }
+        .services-details-left {
+          font-size: 14px;
+
+          line-height: 1.7;
+
+          font-weight: 400;
+          text-align: justify;
+        }
+        .services-btn {
+          font-size: 10px !important;
+          .services-btn-decor {
+            font-size: 10px !important;
+            padding: 5px 5px;
+            border-radius: 9px;
+          }
+        }
+      }
+      .services-right-content {
+        width: 100%;
+        height: 200px;
+        .img-right {
+          .img-services-customize {
+            .img-services-customize-1 {
+              height: 80px;
+            }
+            .img-services-customize-2 {
+              height: 80px;
+            }
+            .img-services-customize-3 {
+              height: 80px;
+            }
+            .img-services-customize-4 {
+              height: 80px;
+            }
+            .header-img {
+              font-size: 12px;
+            }
+            .services-right-details {
+              font-size: 12px;
+              color: #666;
+            }
+            .more-infor {
+              width: 100%;
+              .btn-more-infor {
+                font-size: 10px !important;
+                padding: 3px 7px;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

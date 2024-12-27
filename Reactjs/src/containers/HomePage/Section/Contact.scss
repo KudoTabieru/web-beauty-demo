@@ -1,0 +1,45 @@
+.Contact {
+  margin-top: 150px;
+  font-family: sans-serif;
+  text-align: -webkit-center;
+  height: 450px;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    input {
+      height: 60px;
+      margin-top: 20px;
+    }
+    select {
+      height: 50px;
+      margin-top: 20px;
+    }
+    .btn-submit {
+      margin-top: 20px;
+      background-color: #b08933;
+      color: antiquewhite;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Contact {
+    margin-top: 160px;
+    height: 510px;
+    .form {
+      width: 70%;
+      input {
+        height: 60px;
+        margin-top: 24px;
+      }
+      select {
+        height: 50px;
+        margin-top: 24px;
+      }
+    }
+  }
+}
