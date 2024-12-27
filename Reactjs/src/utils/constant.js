@@ -5,6 +5,9 @@ export const path = {
   LOG_OUT: "/logout",
   SYSTEM: "/system",
   BOOKING: "/booking",
+  ABOUT: "/about",
+  CONTACT: "/contact",
+  BLOG: "/blog",
 };
 
 export const languages = {

@@ -1,0 +1,108 @@
+.footerMap-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+
+  .footerMap-content {
+    // border: 2px solid green;
+    width: 100%;
+
+    background-color: #f5e4bf;
+
+    .footerMap-header {
+      text-align: center;
+      color: #b08933;
+
+      font-size: 32px;
+      font-weight: 700;
+
+      padding: 15px;
+    }
+    .column-footer {
+      display: flex;
+      width: 100%;
+      padding: 0 10px;
+      .column-left {
+        width: 50%;
+        height: 280px;
+        border: 1px solid #b08933;
+        padding: 0 0;
+
+        .column-left-header {
+          background-color: #b08933;
+          color: #ffffff;
+          font-size: 20px;
+        }
+        .column-left-details {
+          line-height: 4;
+        }
+      }
+      .column-right {
+        border: 1px solid #b08933;
+        width: 50%;
+        height: 280px;
+        // border: 2px solid blue; // Thêm border để dễ nhận diện
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .google-map {
+          width: 100%;
+          height: 280px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footerMap-container {
+    .footerMap-content {
+      .column-footer {
+        .column-left {
+          height: 270px;
+
+          .column-left-header {
+            font-size: 15px;
+          }
+          .column-left-details {
+            font-size: 12px;
+            line-height: 3;
+          }
+        }
+        .column-right {
+          height: 270px;
+          .google-map {
+            height: 270px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footerMap-container {
+    .footerMap-content {
+      .column-footer {
+        .column-left {
+          height: 270px;
+
+          .column-left-header {
+            font-size: 15px;
+          }
+          .column-left-details {
+            font-size: 12px;
+            line-height: 3;
+          }
+        }
+        .column-right {
+          height: 270px;
+          .google-map {
+            height: 270px;
+          }
+        }
+      }
+    }
+  }
+}

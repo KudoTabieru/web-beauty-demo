@@ -12,9 +12,11 @@ class Specialty extends Component {
     let settings = {
       dots: true,
       infinite: true,
-      speed: 6000,
+      fade: true,
+      speed: 5000,
       slidesToShow: 1,
       slidesToScroll: 1,
+      adaptiveHeight: true,
     };
     return (
       <div className="section-specialty">

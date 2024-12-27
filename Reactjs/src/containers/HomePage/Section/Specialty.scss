@@ -2,45 +2,45 @@
   height: 100vh;
   background: none;
   // border: 3px solid green;
-  margin-top: 0px;
+  margin-top: 131px;
   width: 100%;
   position: relative !important;
 
   .img-customize {
     .img-customize-1 {
       // border: 1px solid red;
-      background: url("../../../assets/specialty/LA-SPA_6-2000.jpg");
+      background: url("../../../assets/ma_img_1.jpg");
       background-position: center center;
       // background-size: contain !important;
       background-repeat: no-repeat;
       background-size: cover;
-      background-color: none;
+      background-color: red;
       height: 100vh;
       width: 100%;
     }
     .img-customize-2 {
-      background: url("../../../assets/specialty/LA-SPA_7-2000.jpg");
+      // background: url("../../../assets/specialty/LA-SPA_7-2000.jpg");
       background-position: center center;
       // background-size: contain !important;
       background-repeat: no-repeat;
       background-size: cover;
-      background-color: none;
+      background-color: blue;
       height: 100vh;
       width: 100%;
     }
     .img-customize-3 {
-      background: url("../../../assets/specialty/PQC_7973-2000.jpg");
+      // background: url("../../../assets/specialty/PQC_7973-2000.jpg");
       background-position: center center;
       // background-size: contain !important;
       background-repeat: no-repeat;
       background-size: cover;
-      background-color: none;
+      background-color: yellow;
       height: 100vh;
 
       width: 100%;
     }
     .img-customize-4 {
-      background: url("../../../assets/specialty/PQC_8123-1500.jpg");
+      // background: url("../../../assets/specialty/PQC_8123-1500.jpg");
       background-position: center center;
       // background-size: contain !important;
       background-repeat: no-repeat;
@@ -66,4 +66,118 @@
   right: 0 !important;
   background-color: black !important;
   border-radius: 200px;
+}
+
+//responsive
+@media (max-width: 768px) {
+  .section-specialty {
+    height: auto;
+    background: none;
+    // border: 3px solid green;
+    margin-top: 131px;
+    width: 100%;
+    position: relative !important;
+
+    .img-customize {
+      .img-customize-1 {
+        // border: 1px solid red;
+        background: url("../../../assets/ma_img_1.jpg");
+        background-position: center center;
+        // background-size: contain !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: red;
+        height: 70vh;
+        width: 100%;
+      }
+      .img-customize-2 {
+        // background: url("../../../assets/specialty/LA-SPA_7-2000.jpg");
+        background-position: center center;
+        // background-size: contain !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: blue;
+        height: 70vh;
+        width: 100%;
+      }
+      .img-customize-3 {
+        // background: url("../../../assets/specialty/PQC_7973-2000.jpg");
+        background-position: center center;
+        // background-size: contain !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: yellow;
+        height: 70vh;
+
+        width: 100%;
+      }
+      .img-customize-4 {
+        // background: url("../../../assets/specialty/PQC_8123-1500.jpg");
+        background-position: center center;
+        // background-size: contain !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: none;
+        height: 70vh;
+        width: 100%;
+      }
+    }
+  }
+}
+
+//responsive mobile  480px
+@media (max-width: 480px) {
+  .section-specialty {
+    height: auto;
+    background: none;
+    // border: 3px solid green;
+    margin-top: 131px;
+    width: 100%;
+    position: relative !important;
+
+    .img-customize {
+      .img-customize-1 {
+        // border: 1px solid red;
+        background: url("../../../assets/ma_img_1.jpg");
+        background-position: center center;
+        // background-size: contain !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: red;
+        height: 40vh;
+        width: 100%;
+      }
+      .img-customize-2 {
+        // background: url("../../../assets/specialty/LA-SPA_7-2000.jpg");
+        background-position: center center;
+        // background-size: contain !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: blue;
+        height: 40vh;
+        width: 100%;
+      }
+      .img-customize-3 {
+        // background: url("../../../assets/specialty/PQC_7973-2000.jpg");
+        background-position: center center;
+        // background-size: contain !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: yellow;
+        height: 40vh;
+
+        width: 100%;
+      }
+      .img-customize-4 {
+        // background: url("../../../assets/specialty/PQC_8123-1500.jpg");
+        background-position: center center;
+        // background-size: contain !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: none;
+        height: 40vh;
+        width: 100%;
+      }
+    }
+  }
 }

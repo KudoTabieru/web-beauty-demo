@@ -8,7 +8,7 @@ import {
   deleteUserService,
   editUserService,
 } from "../../services/userService";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 import ModalUser from "./ModalUser";
 import { emitter } from "../../utils/emitter";
 import ModalEditUser from "./ModalEditUser";

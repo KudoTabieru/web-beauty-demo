@@ -15,12 +15,23 @@ class Newspaper extends Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
+        },
+      ],
     };
     return (
       <div>
         <div className="newspaper-container">
           <div className="newspaper-content">
-            <div className="newspaper-header">BÁO CHÍ NÓI GÌ VỀ MẠ BEAUTY</div>
+            <div className="newspaper-header">SỰ KIỆN NỔI BẬT</div>
             <hr></hr>
             <div className="newspaper-right-content">
               <div className="img-right">
